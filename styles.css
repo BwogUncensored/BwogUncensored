@@ -1,0 +1,135 @@
+/* sock it to me, bitch tits */
+#header {
+	background: #000F40 url("nameplate-background.png");
+	height: 120px;
+	min-width: 990px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #333;
+}
+#header img {
+	display: block;
+	margin: auto;
+}
+#navbar {
+	height: 0.6em;
+	background: #222;
+	border-bottom: 1px solid #060606;
+	padding: 0.3em;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 2.7em;
+	font-weight: bold;
+	font-family: Georgia, "Big Caslon", "Garamond Premier Pro", "Adobe Caslon Pro", "Times New Roman", serif;
+	text-shadow: 1px 1px #555;
+	-webkit-text-shadow: 1px 1px #555;
+	-moz-text-shadow: 1px 1px #555;
+}
+#content {
+	width: 45em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	background-color: white;
+	border: 1px solid white;
+	padding-bottom: 1em;
+	-moz-box-shadow: 0px 8px 5px #111;
+	-webkit-box-shadow: 0px 8px 5px #111;
+	box-shadow: 0px 8px 5px #111;
+}
+#footer {
+	background-color: #222;
+	color: #DDD;
+	text-align: justify;
+	padding: 1em;
+	width: 45em;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-box-shadow: 0px 8px 5px #111;
+	-webkit-box-shadow: 0px 8px 5px #111;
+	box-shadow: 0px 8px 5px #111;
+}
+body {
+	background-color: #2A396A;
+	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 160%;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+h2 {
+	font-family: Georgia, "Big Caslon", "Garamond Premier Pro", "Adobe Caslon Pro", "Times New Roman", serif;
+	font-size: 1.3em;
+	letter-spacing: 0px;
+	padding-bottom: .2em;
+	margin: 1.0em 0 .3em .2em;
+	line-height: 1.2em;
+	text-shadow: 1px 1px #DDD;
+	-webkit-text-shadow: 1px 1px #DDD;
+	-moz-text-shadow: 1px 1px #DDD;
+}
+a {
+	color: #336;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+.modified {
+	font-size: 0.8em;
+	font-style: italic;
+}
+.modified a {
+	font-size: 1em ! important;
+}
+.commentinfo a {
+	text-decoration: none;
+	font-size: 0.8em;
+}
+.commentinfo a:hover {
+	text-decoration: underline;
+}
+.comment {
+	margin-bottom: 1em;
+}
+.comment p {
+	margin-top: 0;
+}
+#sorting {
+	margin-top: 0.5em;
+	font-style: italic;
+	text-align: center;
+
+}
+.sidebar {
+	position: absolute;
+	width: 13em;
+}
+.sidebar h1 {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #333;
+	-moz-text-shadow: 2px 2px 2px #333;
+	-webkit-text-shadow: 2px 2px 2px #333;
+	color: white;
+}
+.sidebar p {
+	font-size: 0.9em;
+	color: #CCE;
+	text-align: justify;
+}
+.sidebar p a {
+	color: #CCE;
+}
+#leftbar {
+	right: 50%;
+	margin-right: 24.5em;
+}
+#rightbar {
+	left: 50%;
+	margin-left: 24.5em;
+}

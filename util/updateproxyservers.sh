@@ -1,0 +1,4 @@
+#!/bin/sh
+(date |tr -d '\n'; echo -e "\tSearching for proxies.";) >> /PATH/TO/LOG;
+for i in {0..74}; do curl "http://www.xroxy.com/proxylist.php?port=&type=All_socks&pnum=$i" 2>/dev/null | sed -n 's/.*host=\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)&port=\([0-9]\{1,6\}\).*/INSERT IGNORE INTO proxies ( host, port, type) VALUES ( "\1", "\2", 1 );/p'; done | mysql -h SERVER -u USERNAME -pPASSWORD DATABASE
+for i in {0..150}; do t=0; curl "http://www.xroxy.com/proxylist.php?port=&type=All_http&pnum=$i" 2>/dev/null | egrep 'proxy:name|Transparent' | tac | while read line; do if [ $t -eq 1 ]; then echo $line; fi; if echo $line | grep Transparent >/dev/null; then t=1; else t=0; fi; done | sed -n 's/.*host=\([0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\)&port=\([0-9]\{1,6\}\).*/INSERT IGNORE INTO proxies ( host, port, type) VALUES ( "\1", "\2", 2 );/p'; done | mysql -h SERVER -u USERNAME -pPASSWORD DATABASE
